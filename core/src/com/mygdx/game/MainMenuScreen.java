@@ -4,6 +4,7 @@ import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
@@ -14,11 +15,17 @@ import com.badlogic.gdx.utils.viewport.StretchViewport;
 
 public class MainMenuScreen implements Screen {
     private final Game game;
+
     private Stage stage;
     private Skin skin;
+
     
     public MainMenuScreen(final Game game) {
     	this.game = game;
+    	
+    	
+    	
+    	
     	
     	// Crea un Stage para la interfaz de usuario
         stage = new Stage(new StretchViewport(Gdx.graphics.getWidth(), Gdx.graphics.getHeight()));
@@ -58,6 +65,9 @@ public class MainMenuScreen implements Screen {
         // Dibuja el Stage
         stage.act(delta);
         stage.draw();
+        //Sprites
+
+        
     }
     @Override
     public void resize(int width, int height) {

@@ -10,7 +10,7 @@ public class DesktopLauncher {
 		Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
 		config.setForegroundFPS(60);
 		config.setTitle("Win the fair");
-		config.setWindowedMode(500, 500);
+		config.setWindowedMode(700, 700);
 		new Lwjgl3Application(new WinFair(), config);
 	}
 }
